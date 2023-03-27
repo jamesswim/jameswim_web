@@ -129,12 +129,6 @@ for ($r=0; $r<=$LastRow; $r++) {
 	    $xDate = date('Ymd', mktime(0,1,0,$M,$Date,$Y));
 	    if ($xDate==date('Ymd')){
 	        $BgColor = ' bgcolor="#AAAAEE"';
-			if($xDate == date('Ymd', mktime(0,1,0,1,5,2023))
-				$LDay = '小寒';
-			if($xDate == date('Ymd', mktime(0,1,0,1,20,2023))
-				$LDay = '大寒';
-			if($xDate == date('Ymd', mktime(0,1,0,2,4,2023))
-				$LDay = '立春';
 		}
         $Date .= '<br>' . $LDay;
 	}
